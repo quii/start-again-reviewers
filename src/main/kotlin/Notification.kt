@@ -1,0 +1,1 @@
+data class Notification(val reviewer: Reviewer, val submission: Submission, val content: String)

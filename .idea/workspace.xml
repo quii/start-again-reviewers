@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42362d89-9a85-49ee-9b8a-bf039ba32525" name="Changes" comment="refactoring">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Report.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Reviewer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Submission.kt" afterDir="false" />
+    <list default="true" id="42362d89-9a85-49ee-9b8a-bf039ba32525" name="Changes" comment="Extract persistent concerns">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Notification.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/InMemoryReportRepo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/InMemoryReportRepo.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ReviewerService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ReviewerService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/ReviewerServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ReviewerServiceTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +88,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ReviewerServiceTest">
+  <component name="RunManager" selected="Gradle.ReviewerServiceTest.once a decision is made, review is closed, and reports will not be accepted">
     <configuration name="ReviewerServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -208,10 +206,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ReviewerServiceTest.once a decision is made, review is closed, and reports will not be accepted" />
         <item itemvalue="Gradle.ReviewerServiceTest" />
         <item itemvalue="Gradle.ReviewerServiceTest.an editor can give a shortlist for a submission to the reviewer service to get some reports" />
         <item itemvalue="Gradle.ReviewerServiceTest.can remove from the shortlist, which would prevent reports from that reviewer" />
-        <item itemvalue="Gradle.ReviewerServiceTest.once a decision is made, review is closed, and reports will not be accepted" />
         <item itemvalue="Gradle.ReviewerServiceTest.cant send reports to a submission that does not exist" />
       </list>
     </recent_temporary>
@@ -224,7 +222,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707485640252</updated>
-      <workItem from="1707485641249" duration="4833000" />
+      <workItem from="1707485641249" duration="6192000" />
     </task>
     <task id="LOCAL-00001" summary="very simple starting case of opening review, and sending a report">
       <created>1707487564306</created>
@@ -254,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707489598143</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Extract persistent concerns">
+      <created>1707490569976</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1707490569976</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +269,8 @@
     <MESSAGE value="very simple starting case of opening review, and sending a report" />
     <MESSAGE value="more scenarios" />
     <MESSAGE value="refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
+    <MESSAGE value="Extract persistent concerns" />
+    <option name="LAST_COMMIT_MESSAGE" value="Extract persistent concerns" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

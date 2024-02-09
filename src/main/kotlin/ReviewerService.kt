@@ -11,16 +11,29 @@ interface ReportRepo {
     fun get(submission: Submission): List<Report>
 }
 
+interface Notifier {
+    fun notify(notification: Notification)
+}
+
 class ReviewerService(
     private val submissionReviewRepo: SubmissionReviewRepo,
-    private val reports: ReportRepo
+    private val reports: ReportRepo,
+    private val notifier: Notifier
 ) {
 
     fun review(submission: Submission, shortList: List<Reviewer>) {
         submissionReviewRepo.startReview(submission, shortList)
+        shortList.forEach { reviewer -> notifier.notify(Notification(reviewer, submission, "plz review")) }
     }
 
     fun closeReview(submission: Submission) {
+        val reviewersWhoHaveSentReports = reports.get(submission).map { report -> report.reviewer }.toSet()
+        val shortList = submissionReviewRepo.getShortList(submission).toSet()
+
+        shortList.subtract(reviewersWhoHaveSentReports).forEach{reviewer ->
+            notifier.notify(Notification(reviewer, submission, "dont bother mate"))
+        }
+
         submissionReviewRepo.close(submission)
     }
 
