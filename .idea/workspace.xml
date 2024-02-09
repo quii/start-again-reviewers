@@ -88,7 +88,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ReviewerServiceTest.once a decision is made, review is closed, and reports will not be accepted">
+  <component name="RunManager" selected="Gradle.ReviewerServiceTest">
     <configuration name="ReviewerServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -158,7 +158,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ReviewerServiceTest.cant send reports to a submission that does not exist" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ReviewerServiceTest.can remove from the shortlist, which would prevent reports from that reviewer, and notify them" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -171,7 +171,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ReviewerServiceTest.cant send reports to a submission that does not exist&quot;" />
+            <option value="&quot;ReviewerServiceTest.can remove from the shortlist, which would prevent reports from that reviewer, and notify them&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -206,11 +206,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ReviewerServiceTest.once a decision is made, review is closed, and reports will not be accepted" />
         <item itemvalue="Gradle.ReviewerServiceTest" />
+        <item itemvalue="Gradle.ReviewerServiceTest.can remove from the shortlist, which would prevent reports from that reviewer, and notify them" />
+        <item itemvalue="Gradle.ReviewerServiceTest.once a decision is made, review is closed, and reports will not be accepted" />
         <item itemvalue="Gradle.ReviewerServiceTest.an editor can give a shortlist for a submission to the reviewer service to get some reports" />
         <item itemvalue="Gradle.ReviewerServiceTest.can remove from the shortlist, which would prevent reports from that reviewer" />
-        <item itemvalue="Gradle.ReviewerServiceTest.cant send reports to a submission that does not exist" />
       </list>
     </recent_temporary>
   </component>

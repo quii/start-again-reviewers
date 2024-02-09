@@ -39,6 +39,7 @@ class ReviewerService(
 
     fun unInvite(submission: Submission, reviewer: Reviewer) {
         submissionReviewRepo.removeReviewer(submission, reviewer)
+        notifier.notify(Notification(reviewer, submission, "You suck i don't want to hear from you"))
     }
 
     fun getShortList(submission: Submission) = submissionReviewRepo.getShortList(submission)
