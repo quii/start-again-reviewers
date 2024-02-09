@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="42362d89-9a85-49ee-9b8a-bf039ba32525" name="Changes" comment="more scenarios">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ReviewerService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/UnauthorizedReportException.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ReviewerService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ReviewerService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/ReviewerServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ReviewerServiceTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,8 +80,8 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ReviewerServiceTest.can remove from the shortlist, which would prevent reports from that reviewer">
-    <configuration name="ReviewerServiceTest.an editor can give a shortlist for a submission to the reviewer service to get some reports" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.ReviewerServiceTest">
+    <configuration name="ReviewerServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -96,7 +94,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ReviewerServiceTest.an editor can give a shortlist for a submission to the reviewer service to get some reports&quot;" />
+            <option value="&quot;ReviewerServiceTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -200,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ReviewerServiceTest" />
         <item itemvalue="Gradle.ReviewerServiceTest.can remove from the shortlist, which would prevent reports from that reviewer" />
         <item itemvalue="Gradle.ReviewerServiceTest.once a decision is made, review is closed, and reports will not be accepted" />
         <item itemvalue="Gradle.ReviewerServiceTest.cant send reports to a submission that does not exist" />
         <item itemvalue="Gradle.ReviewerServiceTest.reviewers who were not shortlisted cannot review" />
-        <item itemvalue="Gradle.ReviewerServiceTest.an editor can give a shortlist for a submission to the reviewer service to get some reports" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +214,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707485640252</updated>
-      <workItem from="1707485641249" duration="3456000" />
+      <workItem from="1707485641249" duration="3899000" />
     </task>
     <task id="LOCAL-00001" summary="very simple starting case of opening review, and sending a report">
       <created>1707487564306</created>
@@ -232,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707487573040</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="more scenarios">
+      <created>1707489481732</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707489481732</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
