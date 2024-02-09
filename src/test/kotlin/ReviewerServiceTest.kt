@@ -6,7 +6,7 @@ import strikt.api.*
 import strikt.assertions.*
 
 class ReviewerServiceTest {
-    private val sut = ReviewerService()
+    private val sut = ReviewerService(InMemorySubmissionReviewRepo(), InMemoryReportRepo())
     private val aSubmission = Submission("some id")
 
     @Test

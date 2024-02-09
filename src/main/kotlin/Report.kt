@@ -1,0 +1,1 @@
+data class Report(val submission: Submission, val reviewer: Reviewer, val content: String)

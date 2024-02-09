@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42362d89-9a85-49ee-9b8a-bf039ba32525" name="Changes" comment="more scenarios">
+    <list default="true" id="42362d89-9a85-49ee-9b8a-bf039ba32525" name="Changes" comment="refactoring">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Report.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Reviewer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Submission.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/InMemoryReportRepo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/InMemoryReportRepo.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/ReviewerService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ReviewerService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/ReviewerServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ReviewerServiceTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +83,12 @@
     <key name="CreateKotlinClassDialog.RecentsKey">
       <recent name="" />
     </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="KotlinExtractInterfaceDialog.RECENT_KEYS">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunManager" selected="Gradle.ReviewerServiceTest">
     <configuration name="ReviewerServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -95,6 +105,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;ReviewerServiceTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ReviewerServiceTest.an editor can give a shortlist for a submission to the reviewer service to get some reports" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ReviewerServiceTest.an editor can give a shortlist for a submission to the reviewer service to get some reports&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -173,36 +206,13 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ReviewerServiceTest.reviewers who were not shortlisted cannot review" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ReviewerServiceTest.reviewers who were not shortlisted cannot review&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.ReviewerServiceTest" />
+        <item itemvalue="Gradle.ReviewerServiceTest.an editor can give a shortlist for a submission to the reviewer service to get some reports" />
         <item itemvalue="Gradle.ReviewerServiceTest.can remove from the shortlist, which would prevent reports from that reviewer" />
         <item itemvalue="Gradle.ReviewerServiceTest.once a decision is made, review is closed, and reports will not be accepted" />
         <item itemvalue="Gradle.ReviewerServiceTest.cant send reports to a submission that does not exist" />
-        <item itemvalue="Gradle.ReviewerServiceTest.reviewers who were not shortlisted cannot review" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +224,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707485640252</updated>
-      <workItem from="1707485641249" duration="3899000" />
+      <workItem from="1707485641249" duration="4833000" />
     </task>
     <task id="LOCAL-00001" summary="very simple starting case of opening review, and sending a report">
       <created>1707487564306</created>
@@ -237,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707489481732</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="refactoring">
+      <created>1707489598143</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707489598143</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +263,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="very simple starting case of opening review, and sending a report" />
     <MESSAGE value="more scenarios" />
-    <option name="LAST_COMMIT_MESSAGE" value="more scenarios" />
+    <MESSAGE value="refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

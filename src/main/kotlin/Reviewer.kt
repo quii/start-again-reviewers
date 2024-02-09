@@ -1,0 +1,1 @@
+data class Reviewer(val email: String)
