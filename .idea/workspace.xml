@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42362d89-9a85-49ee-9b8a-bf039ba32525" name="Changes" comment="Extract persistent concerns">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Notification.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ReviewerService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ReviewerService.kt" afterDir="false" />
+    <list default="true" id="42362d89-9a85-49ee-9b8a-bf039ba32525" name="Changes" comment="note in readme">
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/ReviewerServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ReviewerServiceTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,6 +67,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Facets",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
@@ -222,7 +220,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707485640252</updated>
-      <workItem from="1707485641249" duration="6192000" />
+      <workItem from="1707485641249" duration="6648000" />
     </task>
     <task id="LOCAL-00001" summary="very simple starting case of opening review, and sending a report">
       <created>1707487564306</created>
@@ -259,7 +257,28 @@
       <option name="project" value="LOCAL" />
       <updated>1707490569976</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="notifications">
+      <created>1707491854095</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707491854095</updated>
+    </task>
+    <task id="LOCAL-00007" summary="notify on uninvite">
+      <created>1707492068230</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707492068230</updated>
+    </task>
+    <task id="LOCAL-00008" summary="note in readme">
+      <created>1707492117519</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707492117519</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +289,10 @@
     <MESSAGE value="more scenarios" />
     <MESSAGE value="refactoring" />
     <MESSAGE value="Extract persistent concerns" />
-    <option name="LAST_COMMIT_MESSAGE" value="Extract persistent concerns" />
+    <MESSAGE value="notifications" />
+    <MESSAGE value="notify on uninvite" />
+    <MESSAGE value="note in readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="note in readme" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

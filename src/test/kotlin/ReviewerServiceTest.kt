@@ -17,11 +17,12 @@ class ReviewerServiceTest {
 
     private val sut = ReviewerService(InMemorySubmissionReviewRepo(), InMemoryReportRepo(), fakeNotifier)
     private val aSubmission = Submission("some id")
+    private val chrisReport = Report(aSubmission, chrisTheReviewer, "This paper sucks")
+    private val edReport = Report(aSubmission, edTheReviewer, "This paper is amazing")
 
     @Test
     fun `an editor can give a shortlist for a submission to the reviewer service to get some reports, the reviewers will be notified`() {
         val shortList = listOf(chrisTheReviewer, edTheReviewer, bernardoTheReviewer)
-        val chrisReport = Report(aSubmission, chrisTheReviewer, "This paper sucks")
 
         sut.review(aSubmission, shortList)
 
@@ -40,8 +41,6 @@ class ReviewerServiceTest {
     @Test
     fun `once a decision is made, review is closed, and reports will not be accepted`() {
         val shortList = listOf(chrisTheReviewer, edTheReviewer, bernardoTheReviewer)
-        val chrisReport = Report(aSubmission, chrisTheReviewer, "This paper sucks")
-        val edReport = Report(aSubmission, edTheReviewer, "This paper is amazing")
 
         sut.review(aSubmission, shortList)
         sut.saveReport(chrisReport)
@@ -66,14 +65,18 @@ class ReviewerServiceTest {
 
         sut.review(aSubmission, shortList)
 
-        val chrisReport = Report(aSubmission, chrisTheReviewer, "This paper sucks")
         expectCatching { sut.saveReport(chrisReport) }.isFailure().isA<UnauthorizedReportException>()
     }
 
     @Test
     fun `cant send reports to a submission that does not exist`() {
-        val chrisReport = Report(Submission("hasnt been opened for review"), chrisTheReviewer, "This paper sucks")
-        expectCatching { sut.saveReport(chrisReport) }.isFailure().isA<SubmissionDoesntExistException>()
+        expectCatching { sut.saveReport(
+            Report(
+                Submission("hasnt been opened for review"),
+                chrisTheReviewer,
+                "This paper sucks"
+            )
+        ) }.isFailure().isA<SubmissionDoesntExistException>()
     }
 
     @Test
@@ -87,7 +90,6 @@ class ReviewerServiceTest {
             Notification(chrisTheReviewer, aSubmission, "You suck i don't want to hear from you"),
         )
 
-        val chrisReport = Report(aSubmission, chrisTheReviewer, "This paper sucks")
         expectCatching { sut.saveReport(chrisReport) }.isFailure().isA<UnauthorizedReportException>()
     }
 
