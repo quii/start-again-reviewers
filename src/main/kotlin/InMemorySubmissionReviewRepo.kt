@@ -17,4 +17,11 @@ class InMemorySubmissionReviewRepo : SubmissionReviewRepo {
     override fun close(submission: Submission) {
         submissionsUnderReview.remove(submission)
     }
+
+    override fun getSubmissions(reviewer: Reviewer): List<Submission> {
+        val filter = submissionsUnderReview.filter { entry: Map.Entry<Submission, List<Reviewer>> ->
+            entry.value.contains(reviewer)
+        }
+        return filter.keys.toList()
+    }
 }

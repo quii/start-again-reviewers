@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42362d89-9a85-49ee-9b8a-bf039ba32525" name="Changes" comment="note in readme">
+    <list default="true" id="42362d89-9a85-49ee-9b8a-bf039ba32525" name="Changes" comment="tidy up">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/InMemorySubmissionReviewRepo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/InMemorySubmissionReviewRepo.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ReviewerService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ReviewerService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/ReviewerServiceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/ReviewerServiceTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,27 +58,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "go.import.settings.migrated": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Facets",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "ruby.rails.projectView.checked": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Facets&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateKotlinClassDialog.RecentsKey">
       <recent name="" />
@@ -86,7 +90,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ReviewerServiceTest">
+  <component name="RunManager" selected="Gradle.ReviewerServiceTest.get workload of a reviewer">
     <configuration name="ReviewerServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -133,29 +137,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ReviewerServiceTest.can remove from the shortlist, which would prevent reports from that reviewer" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ReviewerServiceTest.can remove from the shortlist, which would prevent reports from that reviewer&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="ReviewerServiceTest.can remove from the shortlist, which would prevent reports from that reviewer, and notify them" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -170,6 +151,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;ReviewerServiceTest.can remove from the shortlist, which would prevent reports from that reviewer, and notify them&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ReviewerServiceTest.get workload of a reviewer" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ReviewerServiceTest.get workload of a reviewer&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -204,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ReviewerServiceTest.get workload of a reviewer" />
         <item itemvalue="Gradle.ReviewerServiceTest" />
         <item itemvalue="Gradle.ReviewerServiceTest.can remove from the shortlist, which would prevent reports from that reviewer, and notify them" />
         <item itemvalue="Gradle.ReviewerServiceTest.once a decision is made, review is closed, and reports will not be accepted" />
         <item itemvalue="Gradle.ReviewerServiceTest.an editor can give a shortlist for a submission to the reviewer service to get some reports" />
-        <item itemvalue="Gradle.ReviewerServiceTest.can remove from the shortlist, which would prevent reports from that reviewer" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +224,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1707485640252</updated>
-      <workItem from="1707485641249" duration="6648000" />
+      <workItem from="1707485641249" duration="7333000" />
+      <workItem from="1707729994646" duration="76000" />
+      <workItem from="1707745089457" duration="1559000" />
     </task>
     <task id="LOCAL-00001" summary="very simple starting case of opening review, and sending a report">
       <created>1707487564306</created>
@@ -278,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707492117519</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="tidy up">
+      <created>1707492389147</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1707492389147</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +305,8 @@
     <MESSAGE value="notifications" />
     <MESSAGE value="notify on uninvite" />
     <MESSAGE value="note in readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="note in readme" />
+    <MESSAGE value="tidy up" />
+    <option name="LAST_COMMIT_MESSAGE" value="tidy up" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

@@ -17,6 +17,7 @@ class ReviewerServiceTest {
 
     private val sut = ReviewerService(InMemorySubmissionReviewRepo(), InMemoryReportRepo(), fakeNotifier)
     private val aSubmission = Submission("some id")
+    private val anotherSubmission = Submission("some other id")
     private val chrisReport = Report(aSubmission, chrisTheReviewer, "This paper sucks")
     private val edReport = Report(aSubmission, edTheReviewer, "This paper is amazing")
 
@@ -98,6 +99,17 @@ class ReviewerServiceTest {
         val shortList = listOf(chrisTheReviewer, edTheReviewer, bernardoTheReviewer)
         sut.review(aSubmission, shortList)
         expectThat(sut.getShortList(aSubmission)).contains(shortList)
+    }
+
+    @Test
+    fun `get workload of a reviewer`() {
+        val shortList = listOf(chrisTheReviewer, edTheReviewer, bernardoTheReviewer)
+        val shorterShortList = listOf(bernardoTheReviewer)
+        sut.review(aSubmission, shortList)
+        sut.review(anotherSubmission, shorterShortList)
+
+        expectThat(sut.getWorkload(bernardoTheReviewer)).contains(aSubmission, anotherSubmission)
+        expectThat(sut.getWorkload(chrisTheReviewer)).contains(aSubmission)
     }
 
 }

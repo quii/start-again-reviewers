@@ -4,6 +4,7 @@ interface SubmissionReviewRepo {
     fun removeReviewer(submission: Submission, reviewer: Reviewer)
     fun close(submission: Submission)
     fun reviewerIsAuthorizedToReport(report: Report) = getShortList(report.submission).contains(report.reviewer)
+    fun getSubmissions(reviewer: Reviewer): List<Submission>
 }
 
 interface ReportRepo {
@@ -35,6 +36,10 @@ class ReviewerService(
         }
 
         submissionReviewRepo.close(submission)
+    }
+
+    fun getWorkload(reviewer: Reviewer): List<Submission> {
+        return submissionReviewRepo.getSubmissions(reviewer)
     }
 
     fun unInvite(submission: Submission, reviewer: Reviewer) {
